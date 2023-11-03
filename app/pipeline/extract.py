@@ -5,17 +5,18 @@ import pandas as pd
 
 from typing import List
 
-"""
-Function to read files from a `data/input` folder and return a list of DataFrames.
 
-Args: `input_path (str): folder path with files
-
-Return: DataFrame list
-"""
 
 path = "data/input"
 
 def extract_from_excel(path: str) -> List[pd.DataFrame]:
+    """
+    Function to read files from a `data/input` folder and return a list of DataFrames.
+
+    Args: `input_path (str): folder path with files
+
+    Return: DataFrame list
+    """
     all_files = glob.glob(os.path.join(path, "*.xlsx"))
     
     data_frame_list = []
