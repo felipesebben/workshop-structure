@@ -1,0 +1,21 @@
+site_name: Workshop | Structuring your Data Project
+theme:
+  name: material # select your theme - third parties available at https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
+  palette: 
+    primary: blue
+  language: en
+
+
+repo_name: "felipesebben/workshop-structure"
+repo_url: "https://github.com/felipesebben/workshop-structure"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
