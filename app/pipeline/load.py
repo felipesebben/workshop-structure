@@ -1,9 +1,12 @@
-import pandas as pd
+"""This is our load module."""
 import os
 
+import pandas as pd
 
 
-def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> str:
+def load_excel(
+    data_frame: pd.DataFrame, output_path: str, file_name: str
+) -> str:
     """
     Receive DataFrame and save it as an Excel file.
 
@@ -17,5 +20,5 @@ def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> st
     """
     if not os.path.exists(output_path):
         os.makedirs(output_path)
-    data_frame.to_excel(f"{output_path}/{file_name}.xlsx", index=False)
-    return "File successfully saved"
+    data_frame.to_excel(f'{output_path}/{file_name}.xlsx', index=False)
+    return 'File successfully saved'
