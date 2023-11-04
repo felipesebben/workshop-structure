@@ -12,7 +12,7 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     """
     Read files from a `data/input` folder and return a list of DataFrames.
 
-    Args: `input_path (str): folder path with files
+    Args: `input_path (str)`: folder path with files
 
     Return: DataFrame list
     """
